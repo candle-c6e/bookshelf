@@ -37,3 +37,15 @@ a {
   align-items: flex-start;
   margin: 2rem auto;
 }
+
+@media screen and (max-width: 900px) {
+  .content {
+    padding: 0 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .content div:first-of-type {
+    position: relative !important;
+    top: 0 !important;
+  }
+}

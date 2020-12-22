@@ -16,6 +16,10 @@ const HeaderList = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style: none;
+
+  @media (max-width: 900px) {
+    padding: 0 2rem;
+  }
 `;
 
 const HeaderItem = styled.li``;

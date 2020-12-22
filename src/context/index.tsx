@@ -21,7 +21,7 @@ function AppProvider({ children }: Props) {
   return (
     <QueryClientProvider client={queryClient}>
       <AuthProvider>
-        <Router>{children}</Router>
+        <Router basename="bookshelf">{children}</Router>
       </AuthProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
